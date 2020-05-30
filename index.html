@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Icon Pack -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Scroll animations -->
+    <link rel="stylesheet" href="animate.css">
+    <script src="wow.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <title> Samantha Liu</title>
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGATION STARTS -->
+        <div class="nav">
+            <div class="title">
+                <span><a href="index.html">Samantha Liu</a></span>
+            </div>
+
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">x</a>
+                <a href="index.html">About</a> <br>
+                <a href="f-p.html">Film & Photography</a> <br>
+                <a href="other.html">Other</a> <br>
+            </div>
+              
+            <div id="main">
+                <button class="open-btn" onclick="openNav()">☰</button>
+            </div> 
+        </div>
+        <!-- NAVIGATION ENDS -->
+        <!-- HERO BEGINS -->
+        <div class="hero-section" id="index-hero">
+            <div class="row" id="row1">
+                <div class="col-lg-6 hero-left">
+                    <div class="text" id="header-text">
+                        <p class="wow fadeInUp">About Me...</p>
+                        <div class="wow fadeInUp" data-wow-delay=".7s" id="left-content">
+                            <p> My name is Samantha (Sam) Liu and I am a junior at Tufts University. I am double majoring in Computer Science and Child Study/Human Development with a concentration in 21st century literacies: media and technology. 
+                                I am particularly interested in the intersection of children development, education, and technology, such as innovative and creative EdTech programs and applications. 
+                                I have special interest in web development and software development. I have experience with C++, JavaScript, HTML, and CSS but I am always learning new skills everyday!
+                            </p>
+                            <p>
+                                Beyond my studies, I have a passion for creativity and design. I love to experiment with photography and film, especially through portraits and travel videography. On the side, I also create jewlery pieces using polymer clay and resin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume">
+                    <a href="sliu-resume.pdf">Resume</a>
+                </div>
+                <div class="col-lg-6 hero-right">
+                    <div class="text">
+                        <p class="wow fadeInUp">
+                            <img src="images/pol-3.jpg" width="420px" id="about-pic">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HERO ENDS -->
+        <!-- FOOTER BEGIN -->
+        <div class="footer">
+            <div class="icon-list">
+                <span>
+                    <a href="https://www.linkedin.com/in/samantha-liu22/">
+                        <ion-icon name="logo-linkedin" id="linkedin"></ion-icon>
+                    </a>
+                    <a href="https://github.com/sliu00">
+                        <ion-icon name="logo-github" id="github"></ion-icon>
+                    </a>
+                    <a href="https://www.facebook.com/Sammie.liu00/">
+                        <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+                    </a> 
+                    <a href="https://www.instagram.com/s.am.anth.a/">
+                        <ion-icon name="logo-instagram" id="instagram"></ion-icon>
+                    </a>  
+                    <a href="https://www.youtube.com/channel/UCcXWkpU6cxSsR2ljcLDWTeQ">
+                        <ion-icon name="logo-youtube" id="youtube"></ion-icon>
+                    </a>                 
+                </span>
+                
+            </div>
+            <span>samantha.liu@tufts.edu</span> <span>|</span> <span>781.983.1834</span> 
+        <!-- FOOTER ENDS -->
+    </div>
+</body>
+<script src="img-mouseover.js"></script>
+<script src="nav.js"></script>
+<script>
+    new WOW().init();
+    
+    //Scroll activated background change
+    $(function() {
+            $(document).scroll(function() {
+                  var $nav = $(".nav");
+                  $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
+            });
+      });
+
+  
+</script>
+</html>
